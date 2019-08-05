@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 
 
-    const dreamv2 = ["465944939327389705"]
+    const dreamv2 = ["608030857072214036"]
     client.on('message', message => {
         var dream = message.content.split(` `).slice(1).join(' ');
           if (!dreamv2.includes(message.author.id)) return;
@@ -41,4 +41,4 @@ client.on('ready', () => {
     });
 
 
-client.login(process.env.LIGHT);
+client.login(process.env.BOT_TOKEN);
